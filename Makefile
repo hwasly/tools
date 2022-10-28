@@ -1,4 +1,4 @@
-# Copyright (c) 2015-2022 Franco Fichtner <franco@hwasly.org>
+# Copyright (c) 2015-2022 Franco Fichtner <franco@opnsense.org>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -51,7 +51,6 @@ lint-composite:
 
 lint: lint-steps lint-composite
 
-
 # Special vars to load early build.conf settings:
 
 ROOTDIR?=	/usr
@@ -77,7 +76,7 @@ _CONFIGDIR=	${DIR:C/\/build\.conf$//}
 
 # Bootstrap the build options if not set:
 
-NAME?=		HWasly
+NAME?=		OPNsense
 TYPE?=		${NAME:tl}
 SUFFIX?=	# empty
 FLAVOUR?=	OpenSSL LibreSSL # first one is default
@@ -91,13 +90,13 @@ DEVICE?=	A10
 COMSPEED?=	115200
 UEFI?=		arm dvd serial vga vm
 ZFS?=		# empty
-GITBASE?=	https://github.com/hwasly
-MIRRORS?=	https://hwasly.c0urier.net \
-		http://mirrors.nycbug.org/pub/hwasly \
-		http://mirror.wdc1.us.leaseweb.net/hwasly \
-		http://mirror.sfo12.us.leaseweb.net/hwasly \
-		http://mirror.fra10.de.leaseweb.net/hwasly \
-		http://mirror.ams1.nl.leaseweb.net/hwasly
+GITBASE?=	https://github.com/opnsense
+MIRRORS?=	https://opnsense.c0urier.net \
+		http://mirrors.nycbug.org/pub/opnsense \
+		http://mirror.wdc1.us.leaseweb.net/opnsense \
+		http://mirror.sfo12.us.leaseweb.net/opnsense \
+		http://mirror.fra10.de.leaseweb.net/opnsense \
+		http://mirror.ams1.nl.leaseweb.net/opnsense
 SERVER?=	user@does.not.exist
 UPLOADDIR?=	.
 _VERSION!=	date '+%Y%m%d%H%M'
