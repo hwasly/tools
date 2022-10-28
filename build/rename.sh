@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (c) 2016-2021 Franco Fichtner <franco@opnsense.org>
+# Copyright (c) 2016-2021 Franco Fichtner <franco@hwasly.org>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -45,7 +45,7 @@ for ARG in ${@}; do
 		echo ">>> Repacking base set..."
 		BASESET=$(find_set base)
 		setup_set ${STAGEDIR}/work ${BASESET}
-		cp ${STAGEDIR}/work/usr/local/opnsense/version/base.obsolete \
+		cp ${STAGEDIR}/work/usr/local/hwasly/version/base.obsolete \
 		    ${STAGEDIR}/obsolete
 		setup_version ${STAGEDIR} ${STAGEDIR}/work ${ARG} ${STAGEDIR}/obsolete
 		rm ${BASESET}

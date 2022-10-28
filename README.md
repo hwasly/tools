@@ -1,8 +1,8 @@
-About the OPNsense tools
+About the HWasly tools
 ========================
 
 In conjunction with src.git, ports.git, core.git and plugins.git they
-create sets, packages and images for the OPNsense project.
+create sets, packages and images for the HWasly project.
 
 Setting up a build system
 =========================
@@ -15,18 +15,18 @@ All tasks require a root user.  Do the following to grab the repositories
 
     # pkg install git
     # cd /usr
-    # git clone https://github.com/opnsense/tools
+    # git clone https://github.com/hwasly/tools
     # cd tools
     # make update
 
-Note that the OPNsense repositories can also be setup in a non-/usr directory
+Note that the HWasly repositories can also be setup in a non-/usr directory
 by setting ROOTDIR.  For example:
 
-    # mkdir -p /tmp/opnsense
-    # cd /tmp/opnsense
-    # git clone https://github.com/opnsense/tools
+    # mkdir -p /tmp/hwasly
+    # cd /tmp/hwasly
+    # git clone https://github.com/hwasly/tools
     # cd tools
-    # env ROOTDIR=/tmp/opnsense make update
+    # env ROOTDIR=/tmp/hwasly make update
 
 TL;DR
 =====
@@ -70,7 +70,7 @@ Available build options are:
 * FLAVOUR:	"OpenSSL" (default), "LibreSSL", "Base"
 * KERNEL:	the kernel config to use, e.g. SMP (default)
 * MIRRORS:	a list of mirrors to prefetch sets from
-* NAME:		"OPNsense" (default)
+* NAME:		"HWasly" (default)
 * PRIVKEY:	the private key for signing sets
 * PUBKEY:	the public key for signing sets
 * SUFFIX:	the suffix of top package name (default is empty)
@@ -407,10 +407,10 @@ Please note that login is only possible via the Nano and Serial images.
 
 Booting VM images will not work for types other than "raw".
 
-Generating a make.conf for use in running OPNsense
+Generating a make.conf for use in running HWasly
 --------------------------------------------------
 
-A ports tree in a running OPNsense can be used to build packages
+A ports tree in a running HWasly can be used to build packages
 not published on the mirrors.  To generate the make.conf contents
 for standalone use on the host use:
 
@@ -495,7 +495,7 @@ to operate yes or no questions before an action:
 
     # make info confirm dvd
 
-Last but not least, a rebuild of OPNsense core and plugins on package
+Last but not least, a rebuild of HWasly core and plugins on package
 sets is invoked using:
 
     # make hotfix[-<step>]

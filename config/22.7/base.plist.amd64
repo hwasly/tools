@@ -4215,11 +4215,11 @@
 /usr/libexec/tftpd
 /usr/libexec/ulog-helper
 /usr/libexec/zfs/zpool_influxdb
-/usr/local/opnsense/version/base
-/usr/local/opnsense/version/base.arch
-/usr/local/opnsense/version/base.mtree
-/usr/local/opnsense/version/base.obsolete
-/usr/local/opnsense/version/base.size
+/usr/local/hwasly/version/base
+/usr/local/hwasly/version/base.arch
+/usr/local/hwasly/version/base.mtree
+/usr/local/hwasly/version/base.obsolete
+/usr/local/hwasly/version/base.size
 /usr/sbin/ac
 /usr/sbin/accton
 /usr/sbin/acpiconf
