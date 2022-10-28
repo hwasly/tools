@@ -73,9 +73,6 @@ for ARG in ${ARGS}; do
 	echo ">>>>>>>>>>>>>>>>>>>>> Update.sh --- the Argument is: ${ARG} Branch: ${BRANCHES} <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 	echo ">>>>>>>>>>>>>>>>>>>>> Update.sh --- the URL: ${URL} <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 
-
-	BRANCHES= "master"
-	
 	git_clone ${DIR} "${URL}"
 	git_fetch ${DIR}
 	for BRANCH in ${BRANCHES}; do
