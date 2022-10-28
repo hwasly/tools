@@ -70,6 +70,11 @@ for ARG in ${ARGS}; do
 		;;
 	esac
 
+	echo ">>>>>>>>>>>>>>>>>>>>> Update.sh --- the Argument is: ${ARG} Branch: ${BRANCHES} <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+
+
+	BRANCHES= "master"
+	
 	git_clone ${DIR} "${URL}"
 	git_fetch ${DIR}
 	for BRANCH in ${BRANCHES}; do
