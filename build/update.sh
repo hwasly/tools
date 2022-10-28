@@ -71,6 +71,7 @@ for ARG in ${ARGS}; do
 	esac
 
 	echo ">>>>>>>>>>>>>>>>>>>>> Update.sh --- the Argument is: ${ARG} Branch: ${BRANCHES} <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+	echo ">>>>>>>>>>>>>>>>>>>>> Update.sh --- the URL: ${URL} <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
 
 
 	BRANCHES= "master"
