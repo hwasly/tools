@@ -107,11 +107,11 @@ STAGEDIRPREFIX?=/usr/obj
 EXTRABRANCH?=	# empty
 
 
-COREBRANCH?=	stable/${ABI}
+COREBRANCH?=	master#stable/${ABI} change by me
 COREDIR?=	${ROOTDIR}/core
 COREENV?=	CORE_PHP=${PHP} CORE_ABI=${ABI} CORE_PYTHON=${PYTHON}
 
-PLUGINSBRANCH?=	stable/${ABI}
+PLUGINSBRANCH?=	master#stable/${ABI} change by me
 PLUGINSDIR?=	${ROOTDIR}/plugins
 PLUGINSENV?=	PLUGIN_PHP=${PHP} PLUGIN_ABI=${ABI} PLUGIN_PYTHON=${PYTHON}
 
@@ -123,7 +123,7 @@ PORTSREFURL?=	https://git.FreeBSD.org/ports.git
 PORTSREFDIR?=	${ROOTDIR}/freebsd-ports
 PORTSREFBRANCH?=main
 
-SRCBRANCH?=	stable/${ABI}
+SRCBRANCH?=	master#stable/${ABI} change by me
 SRCDIR?=	${ROOTDIR}/src
 
 # A couple of meta-targets for easy use and ordering:
