@@ -324,8 +324,9 @@ git_fetch()
 
 git_clone()
 {
-	echo ">>>>>>>>>> common.sh ->Git_Clone() Function Argument is : ${1}/.git"
+	
 	if [ -d "${1}/.git" ]; then
+		echo ">>>>>>>>>> common.sh ->Git_Clone() Function Argument is : ${1}/.git"
 		return
 	fi
 
