@@ -24,11 +24,11 @@
 # SUCH DAMAGE.
 
 STEPS=		audit arm base boot chroot clean clone compress confirm \
-			connect core distfiles download dvd fingerprint info \
-			kernel list make.conf nano options packages plugins ports \
-			prefetch print rebase release rename rewind serial sign \
-			skim test update upload verify vga vm xtools
-			
+		connect core distfiles download dvd fingerprint info \
+		kernel list make.conf nano options packages plugins ports \
+		prefetch print rebase release rename rewind serial sign \
+		skim test update upload verify vga vm xtools
+
 SCRIPTS=	batch distribution factory hotfix nightly
 
 .PHONY:		${STEPS} ${SCRIPTS}
