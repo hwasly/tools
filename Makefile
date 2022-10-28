@@ -51,6 +51,7 @@ lint-composite:
 
 lint: lint-steps lint-composite
 
+
 # Special vars to load early build.conf settings:
 
 ROOTDIR?=	/usr
